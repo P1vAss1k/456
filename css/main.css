@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Suez+One');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: Trebuchet MS, Helvetica;
+}
+
+/*шапка*/
+
+header {
+    width: 100%;
+    padding: 10px 0.5% 0px 0.5%;
+    background: transparent;
+    float: left;
+    position: fixed;
+}
+
+header #logo {
+    color: #fff;
+    cursor: pointer;
+}
+
+header #logo span {
+    font-size: 1.7em;
+    line-height: 45px;
+    margin-left: 40px;
+    font-family: 'Suez One', serif;
+}
+
+@media (min-width: 701px) {
+    #logo {
+        float: left;
+        width: 30%;
+        font-size: 1.1em;
+    }
+
+    #about {
+        float: right;
+        width: 67%;
+    }
+}
+
+@media (max-width: 700px) {
+    #logo {
+        margin-top: 15px;
+        width: 100%;
+        font-size: 1.6em;
+    }
+
+    #about {
+        float: left;
+        width: 100%;
+    }
+}
+
+#about {
+    text-align: center;
+    font-size: 1em;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+#about > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#about > a:hover {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+#about > a:not(:last-child) {
+    margin-right: 1%;
+}
+
+/*стили для фиксированной шапки*/
+
+.fixed {
+    z-index: 5000;
+    background-color: #fff;
+    border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+    color: #343434;
+}
+
+.fixed #about a {color: #343434}
+.fixed #about a:hover {color: #7c7c7c}
+
+/*главный блок на сайте*/
+
+#top {
+    width: 100%;
+    height: 1000px;
+    background-image: url(https://cdn.pixabay.com/photo/2016/04/09/07/32/laptop-1317581_1280.jpg);
+    background-blend-mode: multiply;
+    background-color: #514f87;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+}
+
+@media (min-width: 1001px) {
+    #top {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 651px) {
+    #top {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 650px) {
+    #top {
+        font-size: 1em;
+        padding-top: 50%;
+    }
+}
+
+#top h1 {
+    padding-top: 20%;
+}
+
+/*блок ограничителей*/
+
+#main {
+    float: left;
+    background-image: url(https://cdn.portfolio.hu/articles/images-md/c/i/m/cimlap-aram0130-347033.jpg);
+
+    background-blend-mode: multiply;
+    background-color: #66497c;
+    background-size: cover;
+    background-attachment: fixed;
+
+    padding: 100px 0;
+    width: 100%;
+
+    border-top: 5px solid silver;
+    color: #ececec;
+    font-size: 1.3em;
+}
+
+@media (min-width: 1401px) {
+    #main {
+        padding: 100px 20%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 1400px) {
+    #main {
+        padding: 100px 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    #main div {
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+
+    #main h2 {font-size: 2em}
+}
+
+#main div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#main h2 {font-size: 3em}
+#main span {color: #fae0e0}
+
+/*блок ОВ телефонной линии*/
+
+#second {
+    float: left;
+    background-image: url(https://hyperpc.ru/images/product/cyber/gallery/silver/hyperpc-cyber-silver-build-photo-landing-01.jpg);
+
+    background-blend-mode: multiply;
+    background-color: #806396;
+    background-size: cover;
+    background-attachment: fixed;
+
+    padding: 100px 0;
+    width: 100%;
+
+    border-top: 5px solid silver;
+    color: #ececec;
+    font-size: 1.3em;
+}
+
+@media (min-width: 1401px) {
+    #second {
+        padding: 100px 20%;
+        width: 60%;
+    } 
+}
+
+@media (max-width: 1400px) {
+    #second {
+        padding: 100px 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    #second div {
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+}
+
+#second div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#second h2 {font-size: 3em;}
+#second span {color: #fae0e0}
+
+/*блок сетевых фильтров*/
+
+#third {
+    float: left;
+    background-image: url(https://www.aluminiumleader.com/upload/iblock/7df/7dfd9fb517d2b04d7fd9a2e0dc5f199b.jpg);
+
+    background-blend-mode: multiply;
+    background-color: #66497c;
+    background-size: cover;
+    background-attachment: fixed;
+
+    padding: 100px 0;
+    width: 100%;
+
+    border-top: 5px solid silver;
+    color: #ececec;
+    font-size: 1.3em;
+}
+
+@media (min-width: 1401px) {
+    #third {
+        padding: 100px 20%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 1400px) {
+    #third {
+        padding: 100px 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    #third div {
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+}
+
+#third ul {
+    margin-left: 50px;
+}
+
+#third div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#third h2 {font-size: 3em}
+#third span {color: #fae0e0}
+
+/*блок спс-ок*/
+
+#fourth {
+    float: left;
+    background-image: url(https://www.navicosoft.com/wp-content/uploads/2021/12/cost.jpg);
+
+    background-blend-mode: multiply;
+    background-color: #66497c;
+    background-size: cover;
+    background-attachment: fixed;
+
+    padding: 100px 0;
+    width: 100%;
+
+    border-top: 5px solid silver;
+    color: #ececec;
+    font-size: 1.3em;
+}
+
+@media (min-width: 1401px) {
+    #fourth {
+        padding: 100px 20%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 1400px) {
+    #fourth {
+        padding: 100px 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    #fourth div {
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+#fourth div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#fourth h2 {font-size: 3em}
+#fourth span {color: #fae0e0}
+
+/*блок упс-ок*/
+
+#fifth {
+    float: left;
+    background-image: url(https://www.theengineeringprojects.com/wp-content/uploads/2021/08/What-is-a-dedicated-server-1.jpg);
+
+    background-blend-mode: multiply;
+    background-color: #66497c;
+    background-size: cover;
+    background-attachment: fixed;
+
+    padding: 100px 0;
+    width: 100%;
+
+    border-top: 5px solid silver;
+    color: #ececec;
+    font-size: 1.3em;
+}
+
+@media (min-width: 1401px) {
+    #fifth {
+        padding: 100px 20%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 1400px) {
+    #fifth {
+        padding: 100px 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    #fifth div {
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+}
+
+#fifth ul {
+    margin-left: 50px;
+}
+
+#fifth div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#fifth h2 {font-size: 2.85em}
+#fifth span {color: #fae0e0}
+
+/*блок ЧаВо*/
+
+#faq {
+    float: left;
+    background-color: #343434;
+    background-size: cover;
+    padding: 100px 0;
+    width: 100%;
+    height: 750px;
+    border-top: 5px solid silver;
+    color: #ececec;
+    font-size: 1.3em;
+}
+
+#faq div {
+    margin-bottom: 10px;
+}
